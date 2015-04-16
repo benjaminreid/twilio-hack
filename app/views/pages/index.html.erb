@@ -2,12 +2,6 @@
 
   <h1>Slack SMS</h1>
 
-  <% if logged_in? %>
-    <%= current_user.id %>
-    <%= current_user.slack_access_token %>
-    <%= current_user.phone_number %>
-  <% end %>
-
   <h2>Interact with your team on Slack using SMS</h2>
 
   <%= link_to 'Sign in with Slack', auth_path('slack'), class: 'button' %>
