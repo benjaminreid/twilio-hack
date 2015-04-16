@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 
+gem 'arel', '6.0.0.beta2'
 gem 'omniauth-slack'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
