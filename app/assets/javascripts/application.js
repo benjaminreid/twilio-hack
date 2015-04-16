@@ -20,7 +20,7 @@ $(document).ready(function() {
     var data = JSON.parse(USER_DATA);
     $.ajax({
       type: 'POST',
-      url: 'foo',
+      url: 'https://smile-tame.usefinch.eu/onboarding',
       data: data,
       dataType: 'json',
       success: function(res) {
