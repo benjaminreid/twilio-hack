@@ -57,6 +57,7 @@ a {
   border-bottom: 2px solid #194ba3;
   cursor: pointer;
   text-decoration: none;
+  transition: .2s;
   &:hover {
     background: lighten(#439fe0, 5%);
   }
@@ -71,21 +72,22 @@ a {
   &:after {
     position: absolute;
     right: 100%;
-    top: 30%;
-    width: 40px;
-    height: 12px;
-    border-top: solid #6FCBDD 5px;
-    border-bottom: solid #E11563 5px;
+    top: 26%;
+    width: 42px;
+    height: 14px;
+    border-top: solid #6FCBDD 7px;
+    border-bottom: solid #E11563 7px;
     content: "";
     margin-right: 1rem;
     transform: rotate(-10deg);
     display: inline-block;
     mix-blend-mode: screen;
+    -webkit-filter: saturate(130%);
   }
   &:after {
     transform: rotate(80deg);
-    border-top: solid #EAA822 5px;
-    border-bottom: solid #38BA91 5px;
+    border-top: solid #EAA822 7px;
+    border-bottom: solid #38BA91 7px;
   }
 }
 
