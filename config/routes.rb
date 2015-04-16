@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/number', to: 'pages#number'
   get '/authorise', to: 'pages#authorise'
   resources :users, only: [:edit, :update, :show]
+  get '/setup_complete', to: 'thanks#setup_complete'
 end
