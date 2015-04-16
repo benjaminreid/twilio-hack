@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by_phone_number(params[:id])
+    @user = User.find_by_phone_number(params[:id]).last
     respond_to do |format|
       format.json { render json: @user }
     end
