@@ -10,6 +10,13 @@ class UsersController < ApplicationController
     render :edit
   end
 
+  def show
+    @user = User.find_by_phone_number(params[:id])
+    respond_to do |format|
+      format.json { render json: @user }
+    end
+  end
+
   private
 
   def user_params
