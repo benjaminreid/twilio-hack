@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/thanks', to: 'pages#thanks'
   get '/thanks', to: 'pages#thanks'
   get '/number', to: 'pages#number'
+  resources :users, only: [:edit, :update]
 end
