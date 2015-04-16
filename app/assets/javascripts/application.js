@@ -14,3 +14,18 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+  if (typeof USER_DATA == 'string') {
+    var data = JSON.parse(USER_DATA);
+    $.ajax({
+      type: 'POST',
+      url: 'foo',
+      data: data,
+      dataType: 'json',
+      success: function(res) {
+        console.log(res);
+      }
+    })
+  }
+});

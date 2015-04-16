@@ -7,3 +7,7 @@
   <p>Your message is being set to <%= @user.phone_number %></p>
 
 </div>
+
+<script>
+  var USER_DATA = '<%=raw @user.to_json %>';
+</script>
